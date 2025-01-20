@@ -1,0 +1,43 @@
+.menu {
+    height: 10px;
+    display: flex;
+    margin-top: -30px;
+    margin-left: 660px;
+    justify-content: center; /* Alinha os itens à esquerda */
+    column-gap: 2rem; /* Espaçamento entre os links */
+    z-index: 1000;
+}
+.menu a {
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-decoration: none; /* Remove sublinhado padrão */
+    position: relative; /* Necessário para a linha animada */
+    color: grey; /* Cor do texto (ajuste conforme necessário) */
+    transition: color 0.3s ease; /* Anima a cor ao passar o mouse */
+    font-size: 15px;
+    margin-top: -60px;
+}
+
+.menu a::after {
+    content: ''; /* Adiciona o sublinhado */
+    position: absolute;
+    left: 0;
+    bottom: 48px;
+    width: 0; /* Começa com largura 0 */
+    height: 2px; /* Espessura da linha */
+    background-color: green; /* Cor da linha */
+    transition: width 0.3s ease; /* Faz a animação gradual */
+}
+
+.menu a:hover {
+    color: #007bff; /* Troca a cor ao passar o mouse (opcional) */
+}
+
+.menu a:hover::after {
+    width: 100%; /* Expande a linha ao passar o mouse */
+}
+.menu a.selected::after {
+    width: 100%; /* Linha fica permanentemente visível */
+}
+.menu a.selected {
+    color: #007bff; /* (Opcional) Destaque adicional para o texto */
+}

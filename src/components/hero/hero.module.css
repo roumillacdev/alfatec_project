@@ -1,0 +1,14 @@
+.cabecalhoContainer {
+    position: relative;
+    margin-top: 20px; /* Adiciona um espaçamento superior */
+}
+
+.cabecalhoContainer img {
+    position: absolute; /* Se você quer usar posicionamento absoluto */
+    top: -30px; /* Ajusta a posição verticalmente */
+    left: 0; /* Se necessário, ajuste horizontalmente */
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    filter: brightness(0.9) contrast(1.2);
+}

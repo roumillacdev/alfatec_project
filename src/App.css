@@ -1,0 +1,28 @@
+
+.App {
+    display: flex;
+    flex-direction: column; /* Empilha os componentes verticalmente */
+    align-items: stretch; /* Faz os componentes ocuparem a largura */
+    width: 100%;
+    min-height: 100vh;
+    overflow: visible; /* Permite que a página cresça verticalmente */
+    scroll-behavior: smooth;
+}
+
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove paddings padrão */
+    box-sizing: border-box; /* Garante que padding e bordas não aumentem o tamanho dos elementos */
+}

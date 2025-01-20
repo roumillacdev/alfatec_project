@@ -1,0 +1,13 @@
+.headerContact {
+    background-color: #2a363f;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 14px; /* Tamanho do texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    position: relative;
+    top: -120px;
+    left: 0;
+    width: 100%; /* Ocupa toda a largura da página */
+    z-index: 1000; /* Garante que esteja acima de outros elementos */
+}
