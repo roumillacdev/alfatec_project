@@ -1,0 +1,46 @@
+.client {
+    position: relative;
+    z-index: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.client h1 {
+    font-size: 70px;
+    margin-bottom: 80px;
+}
+
+.client p {
+    font-size: 30px;
+}
+
+.columns {
+    display: flex; /* Flexbox para criar colunas */
+    justify-content: space-between; /* Distribui as colunas com espaçamento */
+    padding: 50px;
+}
+
+.column {
+    flex: 1; /* Faz as colunas terem o mesmo tamanho */
+    padding: 20px; /* Espaço interno dentro das colunas */
+    margin: 0 10px; /* Espaçamento entre as colunas */
+    background-color: #f4f4f4; /* Cor de fundo opcional */
+    border-radius: 8px; /* Bordas arredondadas, opcional */
+}
+
+.column h2 {
+    margin-top: 10px;
+    font-size: 24px; /* Tamanho do título das colunas */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+.column p {
+    font-size: 18px; /* Tamanho do texto das colunas */
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+}

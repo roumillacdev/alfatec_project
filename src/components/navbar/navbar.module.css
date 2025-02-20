@@ -1,17 +1,58 @@
-.navbar {
-    background: #000;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    margin-top: 10px;
-    margin-left: 70px;
+
+.header {
+    position: fixed;
+    top: 45px;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+    transition: top 0.8s ease; /* Suaviza a transição de posição */
 }
 
-.logo {
-    height: 350px;
+/* Header fixo ao topo */
+.fixed {
+    top: 0;
+}
+
+/* Logo */
+.logo img {
+    width: 300px;
+    margin-left: 30%
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    gap: 40px;
+    margin-right: 10%;
+}
+
+nav a {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black; /* Cor dos links */
+    transition: color 0.3s ease; /* Transição da cor no hover */
+}
+
+/* Efeito hover nos links */
+nav a::before {
+    content: '';
     position: absolute;
-    top: -80px;
-    right: 5px;
-    left: 300px;
-    z-index: 1000;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: green; /* Cor da linha ao passar o mouse */
+    transition: width 0.3s ease;
+}
+
+nav a:hover::before {
+    width: 100%; /* Expande a linha no hover */
 }

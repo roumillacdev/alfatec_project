@@ -1,0 +1,16 @@
+.circle {
+    border-radius: 50%; /* Faz a imagem ser circular */
+    overflow: hidden;     /* Garante que a imagem não ultrapasse o círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc; /* Cor de fundo caso a imagem não seja carregada */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0 auto; /* Centraliza o círculo */
+}
+
+.image {
+    width: 100%;
+    height: 100%; /* Ajustado para preencher o círculo */
+    object-fit: cover; /* cobertura da melhor forma possível no círculo */
+}

@@ -1,13 +1,31 @@
 .headerContact {
     background-color: #2a363f;
     color: #ffffff;
-    text-align: center;
     padding: 14px 0;
-    font-size: 14px; /* Tamanho do texto */
-    font-weight: bold; /* Deixa o texto em negrito */
-    position: relative;
-    top: -120px;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute; /* Fixa o elemento na tela */
+    top: 0; /* Garante que ele fique no topo */
     left: 0;
-    width: 100%; /* Ocupa toda a largura da página */
-    z-index: 1000; /* Garante que esteja acima de outros elementos */
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding-right: 90px;
+}
+
+.whatsappButton, .instagramButton {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.whatsappButton:hover, .instagramButton:hover {
+    color: #128C7E;
 }
