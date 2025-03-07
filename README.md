@@ -1,5 +1,3 @@
-Aqui está um exemplo de **README** para o repositório:
-
 ---
 
 # Alfatec Project
