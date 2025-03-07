@@ -1,46 +1,90 @@
-.client {
-    position: relative;
-    z-index: auto;
-    margin-top: 20px;
-    border-radius: 8px;
-    font-size: 16px;
-    line-height: 1.6;
+.customersContainer {
+    background: #f7f7f7;
+    box-sizing: border-box;
+    color: black;
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-.client h1 {
-    font-size: 70px;
+.customersContainer h1 {
+    font-size: 48px;
+    margin: 0 0 70px 0;
+    font-weight: 600;
     margin-bottom: 80px;
 }
 
-.client p {
-    font-size: 30px;
+.logoGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
 }
 
-.columns {
-    display: flex; /* Flexbox para criar colunas */
-    justify-content: space-between; /* Distribui as colunas com espaçamento */
-    padding: 50px;
+.logoItem {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.column {
-    flex: 1; /* Faz as colunas terem o mesmo tamanho */
-    padding: 20px; /* Espaço interno dentro das colunas */
-    margin: 0 10px; /* Espaçamento entre as colunas */
-    background-color: #f4f4f4; /* Cor de fundo opcional */
-    border-radius: 8px; /* Bordas arredondadas, opcional */
+.logoItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.column h2 {
-    margin-top: 10px;
-    font-size: 24px; /* Tamanho do título das colunas */
-    margin-bottom: 15px; /* Espaçamento abaixo do título */
+.logoItem img {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
 }
 
-.column p {
-    font-size: 18px; /* Tamanho do texto das colunas */
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .logoGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-* {
-    font-family: "Roboto", sans-serif;
+@media (max-width: 768px) {
+    .customersContainer {
+        padding: 60px 40px;
+    }
+
+    .customersContainer h1 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+
+    .logoGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .logoItem {
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .customersContainer {
+        padding: 40px 20px;
+    }
+
+    .customersContainer h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .logoGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }

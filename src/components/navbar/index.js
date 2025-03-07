@@ -36,8 +36,8 @@ export const Navbar = () => {
                 <a href="#inicio" onClick={(e) => scrollToSection(e, 'inicio')}>Inicio</a>
                 <a href="#quemsomos" onClick={(e) => scrollToSection(e, 'quemsomos')}>Sobre</a>
                 <a href="#services" onClick={(e) => scrollToSection(e, 'services')}>Serviços</a>
-                <a href="#clients" onClick={(e) => scrollToSection(e, 'clients')}>Clientes</a>
-                <a href="#contact">Contato</a>
+                <a href="#customers" onClick={(e) => scrollToSection(e, 'customers')}>Clientes</a>
+                <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')}>Contato</a>
             </nav>
         </header>
     );
