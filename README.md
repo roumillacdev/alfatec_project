@@ -1,5 +1,3 @@
-Aqui está o `README.md` em português para o seu projeto no GitHub, com base nas informações fornecidas:
-
 ```markdown
 # Alfatec Project
 
