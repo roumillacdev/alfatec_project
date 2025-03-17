@@ -1,4 +1,3 @@
-```markdown
 # Alfatec Project
 
 Este projeto é uma **landing page** desenvolvida em **React** para a apresentação da empresa **Alfatec Brasil Elevadores**. A página foi criada com o objetivo de fornecer uma interface simples e eficaz para destacar os serviços da empresa e facilitar a interação com os usuários.
